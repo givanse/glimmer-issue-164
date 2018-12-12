@@ -1,0 +1,4 @@
+  {{#each @projectNames key="id" as |projectDesc|}}
+      <ProjectPanel @projectDesc={{projectDesc}}
+                    @removeProject={{@removeProject}} />
+  {{/each}}

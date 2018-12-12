@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cryptocurrency Project Pulse</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="{{rootURL}}vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}app.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    <!--[if lte IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    {{content-for "body"}}
+
+    <div id="app"></div>
+    <script src="{{rootURL}}vendor.js"></script>
+    <script src="{{rootURL}}app.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
