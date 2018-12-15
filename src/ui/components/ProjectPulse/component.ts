@@ -7,6 +7,12 @@ interface ProjectDesc {
 
 export default class ProjectPulse extends Component {
 
-  @tracked private projectNames: ProjectDesc[];
+  @tracked protected projectDesc: ProjectDesc;
+
+  constructor(options) {
+    super(options);
+
+    this.projectDesc = {id: 0, name: 'some name'};
+  }
 
 }

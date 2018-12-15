@@ -1,7 +1,4 @@
-import Component, {tracked} from '@glimmer/component';
+import Component from '@glimmer/component';
 
 export default class ProjectPanel extends Component {
-
-  @tracked private project: any = null;
-
 }
